@@ -7,7 +7,7 @@ const MONGODB_URI="mongodb+srv://jeevanteja334_db_user:todolist@cluster0.tkq7sku
 const app=express();
 
 app.use(cors({
-  origin: ["https://todo-mern-theta-five.vercel.app/"],
+  origin: ["https://deploying-backend-gact.onrender.com"],
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
