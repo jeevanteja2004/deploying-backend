@@ -6,10 +6,7 @@ const todomodel=require('./Models/Todo');
 const MONGODB_URI="mongodb+srv://jeevanteja334_db_user:todolist@cluster0.tkq7sku.mongodb.net/?appName=Cluster0";
 const app=express();
 
-app.use(cors({
-  methods: ["GET", "POST", "PUT", "DELETE"],
-  credentials: true
-}));
+app.use(cors());
 app.use(express.json());
 mongoose.connect(MONGODB_URI)
 .then(()=>{
